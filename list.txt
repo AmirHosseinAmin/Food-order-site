@@ -1,0 +1,471 @@
+Appetizers:
+Bruschetta
+Chicken Wings
+Mozzarella Sticks
+Spinach and Artichoke Dip
+Onion Rings
+Nachos
+Spring Rolls
+Caprese Skewers
+Main Courses:
+Pasta (e.g., Spaghetti Bolognese, Fettuccine Alfredo)
+Pizza (with various toppings)
+Burgers (e.g., Classic Cheeseburger, Veggie Burger)
+Tacos (e.g., Fish Tacos, Chicken Tacos)
+Sandwiches (e.g., Club Sandwich, BLT)
+Sushi Rolls (e.g., California Roll, Salmon Avocado Roll)
+BBQ Ribs
+Stir-Fried Noodles or Rice (e.g., Pad Thai, Fried Rice)
+Salads:
+Caesar Salad
+Greek Salad
+Caprese Salad
+Cobb Salad
+Quinoa Salad
+Waldorf Salad
+Thai Mango Salad
+Spinach Salad with Bacon and Egg
+Soups:
+Tomato Soup
+Chicken Noodle Soup
+Minestrone
+Corn Chowder
+Clam Chowder
+French Onion Soup
+Lentil Soup
+Miso Soup
+Desserts:
+Chocolate Cake
+Cheesecake
+Apple Pie
+Ice Cream Sundae
+Crème Brûlée
+Tiramisu
+Fruit Tart
+Brownies
+Beverages:
+Freshly Squeezed Juice (e.g., Orange, Apple)
+Smoothies (e.g., Berry Blast, Green Detox)
+Milkshakes (e.g., Chocolate, Strawberry)
+Iced Coffee or Tea
+Mocktails (Non-alcoholic Cocktails)
+Soft Drinks (e.g., Cola, Lemonade)
+Mineral Water (Still or Sparkling)
+Hot Drinks (e.g., Coffee, Herbal Tea)
+Feel free to customize and expand this list based on the specific cuisine or theme of your food website.
+
+Shrimp Cocktail
+Deviled Eggs
+Stuffed Mushrooms
+Bacon-Wrapped Jalapeno Poppers
+Meatballs
+Cheese Quesadillas
+Garlic Bread
+Crab Cakes
+Grilled Shrimp Skewers
+Antipasto Platter
+Vegetable Tempura
+Edamame
+
+
+Grilled Steak
+Roast Chicken
+Spaghetti Bolognese
+BBQ Ribs
+Pan-Seared Salmon
+Chicken Parmesan
+Vegetable Stir-Fry
+Beef Stir-Fry
+Margherita Pizza
+Vegetarian Lasagna
+Fish Tacos
+Chicken Curry
+Beef Stew
+Shrimp Scampi
+Mushroom Risotto
+Pulled Pork Sandwiches
+Eggplant Parmesan
+Grilled Shrimp Skewers
+Beef Stir-Fry with Noodles
+Cauliflower Fried Rice
+
+
+
+Caesar Salad
+Greek Salad
+Caprese Salad
+Cobb Salad
+Waldorf Salad
+Thai Peanut Noodle Salad
+Quinoa Salad
+Berry Spinach Salad
+Watermelon Feta Salad
+Chickpea Salad
+Tuna Salad
+Mediterranean Salad
+Mexican Street Corn Salad
+Broccoli Salad
+Oriental Chicken Salad
+Avocado Mango Salad
+
+
+Chicken Noodle Soup
+Tomato Soup
+Minestrone Soup
+Potato Leek Soup
+Vegetable Soup
+Clam Chowder
+French Onion Soup
+Butternut Squash Soup
+Lentil Soup
+Gazpacho
+Creamy Mushroom Soup
+Thai Coconut Soup (Tom Kha)
+Split Pea Soup
+Corn Chowder
+Beef Stew
+Cabbage Soup
+
+
+Whiskey
+Vodka
+Rum
+Tequila
+Gin
+Wine (red, white, rosé)
+Champagne
+Beer (lager, ale, stout)
+Scotch
+Bourbon
+Brandy
+Sake
+Cider
+Martini
+Mojito
+Margarita
+
+
+
+
+
+
+
+/*hamberger menu*/
+
+.menu {
+
+  background-color: #B06621;
+  width: 60%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  padding: 10px;
+  top: -10px;
+  border: 1px solid #0d11176e;
+
+}
+
+
+
+
+nav {
+  background: #242526;
+  position: fixed;
+  width: 100%;
+  z-index: 999; 
+}
+
+nav .menu{
+  max-width: 1250px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+.menu .nav-links .cancel-btnn {
+
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position:absolute;
+  right: 25px;
+}
+
+
+
+.menu {
+
+  left: 0%;
+}
+
+#menu-btn:checked ~ .menu {
+
+  left: -100%;
+}
+
+
+
+
+
+.menu .nav-links li {
+
+  list-style: none;
+  padding: 12px 0px;
+  display: block;
+  position: relative;
+  top: 30px;
+  right: 15px;
+  
+  
+}
+
+
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  padding: 8px;
+  
+}
+
+.nav-links a:hover {
+
+  background-color: #f5f5f5a2;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+}
+
+
+
+
+.nav-link::-webkit-scrollbar { 
+  width: 0px;
+}
+
+
+
+/*about*/
+
+.menu .nav-links .abo {
+
+ display: flex;
+flex-direction: column;
+position: static;
+margin-left:-200px;
+width: 150px;
+height:4px;
+opacity:0;
+visibility: hidden;
+}
+  
+
+
+
+.menu .nav-links .abo li {
+
+  left: 200px;
+  margin: 0;
+  
+}
+
+
+.menu .nav-links .abo a {
+
+  font-size: 15px;
+}
+
+.nav-links li:hover .abo {
+
+  opacity:1;
+  visibility: visible;
+  width: 150px;
+  height: 250px;
+  transition: all 0.5s ease;
+  
+
+
+}
+
+
+
+
+/*drop down menu*/
+
+.menu .nav-links .dropz {
+
+  display: flex;
+  flex-direction: column;
+  position: static;
+  margin-left:-200px;
+  width: 150px;
+  height:4px;
+  opacity:0;
+  visibility: hidden;
+  
+
+
+}
+
+.menu .nav-links .dropz li {
+  left: 200px;
+  margin: 0;
+}
+
+.nav-links li:hover .dropz {
+
+  opacity:1;
+  visibility: visible;
+  width: 150px;
+  height: 250px;
+  transition: all 0.5s ease;
+  
+
+
+}
+
+.menu .nav-links .dropz a {
+
+  font-size: 15px;
+
+
+}
+
+
+
+
+
+
+
+/*hamburger menu*/
+.menu .nav-links .mgmn {
+
+display: flex;
+flex-direction: column;
+position: static;
+margin-left:-200px;
+width: 150px;
+height:4px;
+opacity:0;
+visibility: hidden;
+}
+
+.nav-links .mgmn li {
+
+  left: 200px;
+  margin: 0;
+  
+}
+
+.nav-links  li:hover .mgmn {
+
+
+  opacity:1;
+  visibility: visible;
+  width: 200px;
+  height: 250px;
+  transition: all 0.5s ease;
+  
+
+  
+}
+
+.menu .nav-links .mgmn a {
+
+  font-size:15px;
+  
+}
+
+
+
+.menu .nav-links .mgmn {
+
+display: flex;
+flex-direction: column;
+position: static;
+margin-left:-200px;
+width: 150px;
+height:4px;
+opacity:0;
+visibility: hidden;
+}
+
+.nav-links .mgmn li {
+
+  left: 200px;
+  margin: 0;
+  
+}
+
+.nav-links  li:hover .mgmn {
+
+
+  opacity:1;
+  visibility: visible;
+  width: 200px;
+  height: 250px;
+  transition: all 0.5s ease;
+  
+
+  
+}
+
+.menu .nav-links .mgmn a {
+
+  font-size:15px;
+  
+}
+
+
+/**/
+
+
+.menu .nav-links .loc {
+
+  display: flex;
+  flex-direction: column;
+  position: static;
+  margin-left:-200px;
+  width: 150px;
+  height:4px;
+  opacity:0;
+  visibility: hidden;
+  }
+  
+  .nav-links .loc li {
+  
+    left: 200px;
+    margin: 0;
+    margin-bottom: -8px;
+    
+  }
+  
+  .nav-links  li:hover .loc {
+  
+  
+    opacity:1;
+    visibility: visible;
+    width: 200px;
+    height: 250px;
+    transition: all 0.5s ease;
+    
+  
+    
+  }
+  
+  .menu .nav-links .loc a {
+  
+    font-size:15px;
+    
+  }
+  
+
+  .menu input {
+    display: none;
+  }
